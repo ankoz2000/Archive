@@ -1,0 +1,23 @@
+table {
+	display: flex;
+	vertical-align: top;
+	text-align: center;
+    border: 1px black solid;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+th, td {
+    border: 1px black solid;
+    width: 256px;
+}
+.identificator {
+    width: 40px;
+}
+#add {
+    height: 32px;
+    display: block;
+}
+#btn {
+    margin-top: 4px;
+    margin-left: 4px;
+}
