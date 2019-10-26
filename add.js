@@ -1,4 +1,15 @@
-let array = [];
+let array = [
+    book1 = {
+        id: 1,
+        name: "Кавказский пленник",
+        author: "А. Н. Толстой"
+    },
+    book2 = {
+        id: 2,
+        name: "Евгений Онегин",
+        author: "А. C. Пушкин"
+    }
+];
 function getForm() {
     let form = document.createElement('form');
     let htmlForm = `<form action="add.js">
@@ -6,7 +17,7 @@ function getForm() {
     Автор: <input type="text" id="author"> 
     Год выпуска: <input type="text" id="year"> 
     <input type="submit" value="Добавить" onclick="addElem()"></input>
-</form>`;
+    </form>`;
     let button = document.body.childNodes[1];
     form.className = "get";
     form.innerHTML = htmlForm;
