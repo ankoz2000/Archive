@@ -1,3 +1,4 @@
+let array = [];
 function getForm() {
     let form = document.createElement('form');
     let htmlForm = `<form action="add.js">
@@ -13,14 +14,22 @@ function getForm() {
 };
 
 function addElem() {
-    let name = document.getElementById("name").value;
-    let author = document.getElementById("author").value;
-    let year = document.getElementById("year").value;
+    let book = {
+        id: document.getElementById("id").value,
+        name: document.getElementById("name").value,
+        author: document.getElementById("author").value,
+        year: document.getElementById("year").value
+    };
+    array.push(book);
+    let id = array.length;
+    let name = array[array.length - 1].name;
+    let author = array[array.length - 1].author;
+    let year = array[array.length - 1].year;
     let newElem = document.createElement('form');
     newElem.className = "td";
     htmlElem = `
     <tr>
-    <td class="identificator">2</td>
+    <td class="identificator">${id}</td>
     <td>${name}</td>
     <td>${author}</td>
     <td>${year}</td>
