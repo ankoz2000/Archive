@@ -21,3 +21,11 @@ th, td {
     margin-top: 4px;
     margin-left: 4px;
 }
+#pic, .delete {
+    width: 16px;
+    height: 16px;
+}
+.last {
+    width: 16px;
+    height: 28px;
+}

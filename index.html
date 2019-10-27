@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="./style.css"/>
         <title>Книжный архив</title>
     </head>
     <body>
-        <button id="btn" onclick="getForm()">Добавить</button>
-    <table>
+    <button id="btn" onclick="getForm()" >&#x2630;</button>
+    <table id="table">
+    <tbody id="tbody">
     <tr>
         <th class="identificator">ID</th>
         <th>Название</th>
@@ -22,6 +24,8 @@
         <td></td>
         <td></td>
         <td></td>
+        <td class="last"><button class="btnDelete" onclick="deleteElem(this.parentNode.parentNode)">&#x2613;</button></td>
+        <td class="last"><button class="btnChange">&#x270E;</button></td>
     </tr>
     <tr>
         <td class="identificator" id="id">2</td>
@@ -30,7 +34,10 @@
         <td></td>
         <td></td>
         <td></td>
-        </tr>
+        <td class="last"><button class="btnDelete" onclick="deleteElem(this.parentNode.parentNode)">&#x2613;</button></td>
+        <td class="last"><button class="btnChange">&#x270E;</button></td>
+    </tr>
+    </tbody>
     </table>
     </body>
     <script src="./add.js"></script>
