@@ -61,11 +61,11 @@ function addElem() {
 };
 
 function deleteElem(toDelete) {
-    /*let index = Number(toDelete.cells[0].innerHTML);
+    let index = Number(toDelete.cells[0].innerHTML);
     toDelete.remove();
     array.filter((item) => {
         if (Number(item.id) !== (index - 1)) return item; 
     });
     alert('Книга "' + String(array[index - 1].name) + '" удалена');
-    //alert(String(array[0].name));*/
+    //alert(String(array[0].name));
 };
